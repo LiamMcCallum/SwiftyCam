@@ -101,7 +101,7 @@ import AVFoundation
 	public var videoQuality : VideoQuality       = .high
 
 	/// Disable audio
-	public var disableAudio											 = false
+	public var disableAudio											 = true
 
 	/// Sets whether flash is enabled for photo and video capture
 
@@ -158,11 +158,11 @@ import AVFoundation
     public var allowAutoRotate                = false
 
     /// Specifies the [videoGravity](https://developer.apple.com/reference/avfoundation/avcapturevideopreviewlayer/1386708-videogravity) for the preview layer.
-    public var videoGravity                   : SwiftyCamVideoGravity = .resizeAspect
+    public var videoGravity                   : SwiftyCamVideoGravity = .resizeAspectFill
 
     /// Sets whether or not video recordings will record audio
     /// Setting to true will prompt user for access to microphone on View Controller launch.
-    public var audioEnabled                   = true
+    public var audioEnabled                   = false
 
     /// Sets whether or not app should display prompt to app settings if audio/video permission is denied
     /// If set to false, delegate function will be called to handle exception
