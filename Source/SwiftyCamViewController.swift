@@ -536,8 +536,8 @@ import AVFoundation
 					movieFileOutputConnection?.isVideoMirrored = true
 				}
 
-				//movieFileOutputConnection?.videoOrientation = self.orientation.getVideoOrientation() ?? previewOrientation
-				movieFileOutputConnection?.videoOrientation = AVCaptureVideoOrientation.portrait;
+				movieFileOutputConnection?.videoOrientation = self.orientation.getVideoOrientation() ?? previewOrientation
+				//movieFileOutputConnection?.videoOrientation = AVCaptureVideoOrientation.portrait;
 				
 				
 				// Start recording to a temporary file.
