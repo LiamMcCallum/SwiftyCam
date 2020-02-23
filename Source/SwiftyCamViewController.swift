@@ -536,8 +536,10 @@ import AVFoundation
 					movieFileOutputConnection?.isVideoMirrored = true
 				}
 
-				movieFileOutputConnection?.videoOrientation = self.orientation.getVideoOrientation() ?? previewOrientation
-
+				//movieFileOutputConnection?.videoOrientation = self.orientation.getVideoOrientation() ?? previewOrientation
+				movieFileOutputConnection?.videoOrientation = AVCaptureVideoOrientation.portrait;
+				
+				
 				// Start recording to a temporary file.
 				let outputFileName = UUID().uuidString
 				let outputFilePath = (self.outputFolder as NSString).appendingPathComponent((outputFileName as NSString).appendingPathExtension("mov")!)
