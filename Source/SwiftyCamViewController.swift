@@ -127,7 +127,7 @@ import AVFoundation
 
 	/// Set whether SwiftyCam should allow background audio from other applications
 
-	public var allowBackgroundAudio              = true
+	public var allowBackgroundAudio              = false
 
 	/// Sets whether a double tap to switch cameras is supported
 
