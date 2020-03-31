@@ -101,7 +101,7 @@ import AVFoundation
 	public var videoQuality : VideoQuality       = .high
 
 	/// Disable audio
-	public var disableAudio											 = false
+	public var disableAudio				= false
 
 	/// Sets whether flash is enabled for photo and video capture
 
@@ -127,7 +127,7 @@ import AVFoundation
 
 	/// Set whether SwiftyCam should allow background audio from other applications
 
-	public var allowBackgroundAudio              = false
+	public var allowBackgroundAudio              = true
 
 	/// Sets whether a double tap to switch cameras is supported
 
