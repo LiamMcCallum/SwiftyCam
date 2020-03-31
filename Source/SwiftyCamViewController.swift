@@ -101,7 +101,7 @@ import AVFoundation
 	public var videoQuality : VideoQuality       = .high
 
 	/// Disable audio
-	public var disableAudio											 = true
+	public var disableAudio											 = false
 
 	/// Sets whether flash is enabled for photo and video capture
 
